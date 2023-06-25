@@ -1,0 +1,8 @@
+### change USER_NAME and USER_SSH_KEY to real values
+users:
+  - name: USER_NAME
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh_authorized_keys:
+      - ssh-rsa USER_SSH_KEY
